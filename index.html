@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Social Calendar</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Social Calendar</h1>
+    <div class="controls">
+      <button id="prev">◀</button>
+      <div id="monthLabel"></div>
+      <button id="next">▶</button>
+    </div>
+    <div class="user">
+      <input id="username" placeholder="Your name" />
+      <button id="login">Login</button>
+      <span id="currentUser"></span>
+    </div>
+  </header>
+
+  <main>
+    <div id="calendar"></div>
+    <aside id="dayPanel">
+      <h2 id="dayTitle">Select a day</h2>
+      <div id="eventsList"></div>
+      <form id="eventForm">
+        <input id="title" placeholder="Event title" required />
+        <input id="time" type="time" />
+        <textarea id="desc" placeholder="Description"></textarea>
+        <button type="submit">Add event</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer>
+    <button id="export">Export events</button>
+    <button id="import">Import events</button>
+    <input id="importFile" type="file" accept="application/json" style="display:none" />
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

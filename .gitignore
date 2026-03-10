@@ -16,3 +16,20 @@ venv/
 
 # logs
 *.log
+
+# Node
+node_modules/
+
+# Build outputs
+dist/
+
+coverage/
+
+# Local data
+data.json
+
+# OS files
+.DS_Store
+
+# Editor directories
+.idea/
